@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsNoticeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsNotice">
+        <id column="notice_id" property="noticeId" />
+        <result column="notice_name" property="noticeName" />
+        <result column="notice_value" property="noticeValue" />
+        <result column="notice_create_time" property="noticeCreateTime" />
+        <result column="notice_is_del" property="noticeIsDel" />
+        <result column="notice_status" property="noticeStatus" />
+        <result column="notice_type" property="noticeType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        notice_id, notice_name, notice_value, notice_create_time, notice_is_del, notice_status, notice_type
+    </sql>
+
+</mapper>

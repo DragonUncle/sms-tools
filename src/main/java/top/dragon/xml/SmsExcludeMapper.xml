@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsExcludeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsExclude">
+        <id column="exclude_id" property="excludeId" />
+        <result column="exclude_uid" property="excludeUid" />
+        <result column="exclude_pid" property="excludePid" />
+        <result column="exclude_create_time" property="excludeCreateTime" />
+        <result column="exclude_status" property="excludeStatus" />
+        <result column="exclude_is_del" property="excludeIsDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        exclude_id, exclude_uid, exclude_pid, exclude_create_time, exclude_status, exclude_is_del
+    </sql>
+
+</mapper>

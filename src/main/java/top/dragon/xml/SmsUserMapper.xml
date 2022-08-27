@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsUser">
+        <id column="user_id" property="userId" />
+        <result column="user_type" property="userType" />
+        <result column="user_account" property="userAccount" />
+        <result column="user_password" property="userPassword" />
+        <result column="user_super_password" property="userSuperPassword" />
+        <result column="user_money" property="userMoney" />
+        <result column="user_level" property="userLevel" />
+        <result column="user_exp" property="userExp" />
+        <result column="user_contact" property="userContact" />
+        <result column="user_device" property="userDevice" />
+        <result column="user_is_del" property="userIsDel" />
+        <result column="user_status" property="userStatus" />
+        <result column="user_create_time" property="userCreateTime" />
+        <result column="user_pid" property="userPid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, user_type, user_account, user_password, user_super_password, user_money, user_level, user_exp, user_contact, user_device, user_is_del, user_status, user_create_time, user_pid
+    </sql>
+
+</mapper>

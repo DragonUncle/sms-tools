@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsMsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsMsg">
+        <id column="msg_id" property="msgId" />
+        <result column="msg_phone" property="msgPhone" />
+        <result column="msg_type" property="msgType" />
+        <result column="msg_project_id" property="msgProjectId" />
+        <result column="msg_branch" property="msgBranch" />
+        <result column="msg_uid" property="msgUid" />
+        <result column="msg_sid" property="msgSid" />
+        <result column="msg_value" property="msgValue" />
+        <result column="msg_code" property="msgCode" />
+        <result column="msg_create_time" property="msgCreateTime" />
+        <result column="msg_price" property="msgPrice" />
+        <result column="msg_user_price" property="msgUserPrice" />
+        <result column="msg_finish_time" property="msgFinishTime" />
+        <result column="msg_is_del" property="msgIsDel" />
+        <result column="msg_status" property="msgStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        msg_id, msg_phone, msg_type, msg_project_id, msg_branch, msg_uid, msg_sid, msg_value, msg_code, msg_create_time, msg_price, msg_user_price, msg_finish_time, msg_is_del, msg_status
+    </sql>
+
+</mapper>

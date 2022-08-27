@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsBillMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsBill">
+        <id column="bill_id" property="billId" />
+        <result column="bill_uid" property="billUid" />
+        <result column="bill_type" property="billType" />
+        <result column="bill_way" property="billWay" />
+        <result column="bill_money" property="billMoney" />
+        <result column="bill_balance" property="billBalance" />
+        <result column="bill_create_time" property="billCreateTime" />
+        <result column="bill_is_del" property="billIsDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        bill_id, bill_uid, bill_type, bill_way, bill_money, bill_balance, bill_create_time, bill_is_del
+    </sql>
+
+</mapper>

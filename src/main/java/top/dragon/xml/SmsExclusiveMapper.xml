@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.dragon.mapper.SmsExclusiveMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.dragon.entity.SmsExclusive">
+        <id column="exclusive_id" property="exclusiveId" />
+        <result column="exclusive_item_id" property="exclusiveItemId" />
+        <result column="exclusive_coding" property="exclusiveCoding" />
+        <result column="exclusive_uid" property="exclusiveUid" />
+        <result column="exclusive_price" property="exclusivePrice" />
+        <result column="exclusive_create_time" property="exclusiveCreateTime" />
+        <result column="exclusive_type" property="exclusiveType" />
+        <result column="exclusive_is_del" property="exclusiveIsDel" />
+        <result column="exclusive_status" property="exclusiveStatus" />
+        <result column="exclusive_overdue" property="exclusiveOverdue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        exclusive_id, exclusive_item_id, exclusive_coding, exclusive_uid, exclusive_price, exclusive_create_time, exclusive_type, exclusive_is_del, exclusive_status, exclusive_overdue
+    </sql>
+
+</mapper>
